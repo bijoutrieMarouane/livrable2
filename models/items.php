@@ -1,5 +1,5 @@
 <?php
-class users
+class items
 {
     static public function selectItems()
     {

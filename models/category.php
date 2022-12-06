@@ -1,5 +1,5 @@
 <?php
-class users
+class category
 {
     static public function selectCategory()
     {
