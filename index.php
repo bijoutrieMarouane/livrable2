@@ -4,7 +4,7 @@ require_once './autoload.php';
 
 $home = new HomeController();
 
-$pages = ['home', 'add', 'update', 'delete'];
+$pages = ['home', 'about', 'gallery', 'contact'];
 
 if (isset($_GET['page'])) {
     if (in_array($_GET['page'],$pages)) {

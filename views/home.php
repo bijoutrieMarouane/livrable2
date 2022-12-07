@@ -1,9 +1,9 @@
-<?php include 'includes/header.php'?>
 <div class="hero_area">
+  <?php include 'includes/header.php'?>
     <!-- slider section -->
     <section class="slider_section position-relative">
       <div class="design-box">
-        <img src="image/design-1.png" alt="slide" />
+        <img src="<?= $image ?>design-1.png" alt="slide" />
       </div>
       <div class="slider_number-container d-none d-md-block">
         <div class="number-box">
@@ -60,7 +60,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="image/slider-img.png" alt="" />
+                    <img src="<?= $image ?>slider-img.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="image/slider-img.png" alt="" />
+                    <img src="<?= $image ?>slider-img.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="image/slider-img.png" alt="" />
+                    <img src="<?= $image ?>slider-img.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -121,6 +121,7 @@
         </div>
       </div>
     </section>
+    
     <!-- end slider section -->
     <!-- end header section -->
   </div>
@@ -135,7 +136,7 @@
             <h6>Best PRICE</h6>
           </div>
           <div class="img-box">
-            <img src="image/i-1.png" alt="item" />
+            <img src="<?= $image ?>i-1.png" alt="item" />
           </div>
           <div class="name">
             <h5>Bracelet</h5>
@@ -146,7 +147,7 @@
             <h6>Best PRICE</h6>
           </div>
           <div class="img-box">
-            <img src="image/i-2.png" alt="item" />
+            <img src="<?= $image ?>i-2.png" alt="item" />
           </div>
           <div class="name">
             <h5>Ring</h5>
@@ -157,7 +158,7 @@
             <h6>Best PRICE</h6>
           </div>
           <div class="img-box">
-            <img src="image/i-3.png" alt="item" />
+            <img src="<?= $image ?>i-3.png" alt="item" />
           </div>
           <div class="name">
             <h5>Earings</h5>
@@ -173,7 +174,7 @@
 
   <section class="about_section layout_padding2-top layout_padding-bottom">
     <div class="design-box">
-      <img src="image/design-2.png" alt="" />
+      <img src="<?= $image ?>design-2.png" alt="" />
     </div>
     <div class="container">
       <div class="row">
@@ -197,7 +198,7 @@
         </div>
         <div class="col-md-6">
           <div class="img-box">
-            <img src="image/about-img.png" alt="" />
+            <img src="<?= $image ?>about-img.png" alt="" />
           </div>
         </div>
       </div>
@@ -219,7 +220,7 @@
             <h6>Diamond Ring</h6>
           </div>
           <div class="img-box">
-            <img src="image/i-4.png" alt="" />
+            <img src="<?= $image ?>i-4.png" alt="" />
           </div>
           <div class="detail-box">
             <h5>$<span>1000.00</span></h5>
@@ -231,7 +232,7 @@
             <h6>Diamond Ring</h6>
           </div>
           <div class="img-box">
-            <img src="image/i-2.png" alt="" />
+            <img src="<?= $image ?>i-2.png" alt="" />
           </div>
           <div class="detail-box">
             <h5>$<span>1000.00</span></h5>
@@ -243,7 +244,7 @@
             <h6>Diamond Ring</h6>
           </div>
           <div class="img-box">
-            <img src="image/i-3.png" alt="" />
+            <img src="<?= $image ?>i-3.png" alt="" />
           </div>
           <div class="detail-box">
             <h5>$<span>1000.00</span></h5>
@@ -263,7 +264,7 @@
 
   <section class="ring_section layout_padding">
     <div class="design-box">
-      <img src="image/design-1.png" alt="" />
+      <img src="<?= $image ?>design-1.png" alt="" />
     </div>
     <div class="container">
       <div class="ring_container layout_padding2">
@@ -277,7 +278,7 @@
           </div>
           <div class="col-md-7">
             <div class="img-box">
-              <img src="image/ring-img.jpg" alt="" />
+              <img src="<?= $image ?>ring-img.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -301,7 +302,7 @@
             <div class="client_container">
               <div class="client-id">
                 <div class="img-box">
-                  <img src="image/client.png" alt="" />
+                  <img src="<?= $image ?>client.png" alt="" />
                 </div>
                 <div class="name">
                   <h5>Aliqua</h5>
@@ -321,7 +322,7 @@
             <div class="client_container">
               <div class="client-id">
                 <div class="img-box">
-                  <img src="image/client.png" alt="" />
+                  <img src="<?= $image ?>client.png" alt="" />
                 </div>
                 <div class="name">
                   <h5>Aliqua</h5>
@@ -341,7 +342,7 @@
             <div class="client_container">
               <div class="client-id">
                 <div class="img-box">
-                  <img src="image/client.png" alt="" />
+                  <img src="<?= $image ?>client.png" alt="" />
                 </div>
                 <div class="name">
                   <h5>Aliqua</h5>
