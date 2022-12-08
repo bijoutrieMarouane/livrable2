@@ -12,7 +12,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a href="home" class="nav-link">Home</span></a>
+                        <a href="home" style="color: black !important;" class="nav-link">Home</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="color: black !important;" href="about"> About</a>

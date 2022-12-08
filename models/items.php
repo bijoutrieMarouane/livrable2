@@ -1,15 +1,14 @@
 <?php
 class items
 {
-    static public function selectItems()
+    static public function select()
     {
-        $stmt = DB::connect()->prepare('SELECT * FROM items ORDER BY id_i DESC');
+        $stmt = DB::connect()->prepare('SELECT * FROM items');
         $stmt->execute();
-        $items = $stmt->fetchAll();
-        return $items;
+        return $stmt->fetchAll();
     }
 
-    static public function insertIntoItems($name, $img, $prix)
+    static public function insertInto($name, $img, $prix)
     {
         $stmt = DB::connect()->prepare('INSERT INTO 
                                                 items (
@@ -32,7 +31,7 @@ class items
         );
     }
 
-    static public function updateItems($name,$img,$prix,$id_i)
+    static public function update($name,$img,$prix,$id_i)
     {
         $stmt = DB::connect()->prepare("UPDATE 
         items 
@@ -46,7 +45,7 @@ class items
         $stmt->execute(array($name, $img, $prix,$id_i));
     }
 
-    static public function deleteItems($id_i)
+    static public function delete($id_i)
     {
         $stmt = DB::connect()->prepare("DELETE FROM items WHERE id_i = :zid");
 

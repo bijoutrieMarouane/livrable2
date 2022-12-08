@@ -2,7 +2,9 @@
     <?php
     $noNavbar2 = '';
     include 'includes/header.php';
-    $items = itemsController::selectItems();
+    $data = new itemsController();
+    $items = $data->selectItems();
+    print_r ($items);
     ?>
     <div class="grid container" style="display: flex; flex-wrap:wrap;">
         <div class="item">
@@ -13,7 +15,7 @@
                             echo $item['prix'];
                         echo '</div>';
                         echo '<div class="img-box">';
-                            echo '<img src="' . $image . $item['prix'] . '" alt="item">';
+                            echo '<img src="' . $image . $item['image'] . '" alt="item">';
                         echo '</div>';                        
                         echo '<div class="name">';
                             echo $item['name'];
