@@ -1,5 +1,5 @@
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: #f5e86b;">
         <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand" href="index.html">
                 <img src="<?= $image ?>logo.png" alt="logo" />
@@ -15,16 +15,16 @@
                         <a href="home" class="nav-link">Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about"> About</a>
+                        <a class="nav-link" style="color: black !important;" href="about"> About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gallery"> Gallery</a>
+                        <a class="nav-link" style="color: black !important;" href="gallery"> Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact"> Contact Us</a>
+                        <a class="nav-link" style="color: black !important;" href="contact"> Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link adminNav" href="adminLog"> Admin</a>
+                        <a class="nav-link adminNav" style="color: black !important;" href="home"> Visit Shop</a>
                     </li>
                 </ul>
             </div>

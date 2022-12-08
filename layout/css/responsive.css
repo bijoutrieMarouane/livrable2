@@ -1,10 +1,49 @@
 @media (max-width: 1519.2px) {
-  .grid{
+  .grid {
     display: grid;
     grid-template-columns: repeat(4, 200px);
     grid-gap: 60px;
     justify-content: space-evenly;
   }
+}
+
+@media screen and (max-width : 514px) {
+  .contact .titre_contact {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    color: #FE8E40;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-width: 1px;
+  }
+}
+
+@media (max-width: 670px) {
+  .contact .formulaire {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  .contact .formulaire .image_formulaire {
+    width: 220px;
+    height: 200px;
+    padding: 20px;
+    background-image: url(../image/contact_img.jpg);
+    background-size: cover;
+    border-radius: 30px;
+  }
+
+  .contact .formulaire .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 992px) {
@@ -26,28 +65,34 @@
     height: 450px;
   }
 }
-@media(max-width: 973px){
-  .grid{
+
+@media(max-width: 973px) {
+  .grid {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-gap: 60px;
     justify-content: space-evenly;
   }
-  .PNN{
+
+  .PNN {
     margin-right: 25%;
   }
-  .tel{
+
+  .tel {
     margin-left: 12%;
   }
-  .form{
+
+  .form {
     width: 74%;
   }
-  .btn_envoyer{
+
+  .btn_envoyer {
     margin-left: 35%;
   }
 }
-@media(max-width: 800px){
-  .btn_envoyer{
+
+@media(max-width: 800px) {
+  .btn_envoyer {
     margin-left: 35%;
   }
 }
@@ -121,13 +166,14 @@
   .slider_section .detail_box h1 {
     font-size: 4rem;
   }
-  .grid{
+
+  .grid {
     display: grid;
     grid-template-columns: repeat(2, 80px);
     grid-gap: 10px;
     justify-content: space-evenly;
   }
-  
+
 
 }
 
@@ -151,7 +197,8 @@
   .heading_container h2::before {
     display: none;
   }
-  .grid{
+
+  .grid {
     display: grid;
     grid-template-columns: repeat(1, 80px);
     grid-gap: 10px;

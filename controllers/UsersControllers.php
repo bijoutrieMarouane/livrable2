@@ -2,12 +2,12 @@
 // users = admins + members
 class usersController{
 
-    public function selectUsers()
+    static public function selectUsers()
     {
         $users = users::selectUsers();
         return $users;
     }
-    public function insertIntoUsers()
+    static public function insertIntoUsers()
     {
         $username = $_POST['username'];
         $email = $_POST['email'];
@@ -15,7 +15,7 @@ class usersController{
         $avatar = $_POST['avatar'];
         users::insertIntoUsers($username, $email, $password, $avatar);
     }
-    public function updateUsers()
+    static public function updateUsers()
     {
         $username = $_POST['username'];
         $email = $_POST['email'];
@@ -24,7 +24,7 @@ class usersController{
         $id_u = $_POST['id_u'];
         users::updateUsers($username, $email, $password, $avatar, $id_u);
     }
-    public function deleteUsers()
+    static public function deleteUsers()
     {
         $id_u = $_POST['id_u'];
         users::deleteUsers($id_u);

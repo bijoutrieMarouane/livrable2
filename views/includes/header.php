@@ -33,10 +33,16 @@ $font = 'layout/fonts/'; // Font Directory
   <link href="<?= $css .'style.css'?>" rel="stylesheet" />
   <!-- responsive style -->
   <link href="<?= $css .'responsive.css'?>" rel="stylesheet" />
+  <!-- swiper style -->
+  <link href="<?= $css .'swiper-bundle.min.css'?>" rel="stylesheet" />
+
 
   <?php
     if (!isset($noNavbar)) {
-        include 'navbar.php';
+      include 'navbar.php';
+    }    
+    if (!isset($noNavbar2)) {
+      include 'navbar2.php';
     }
   ?>
 </head>
