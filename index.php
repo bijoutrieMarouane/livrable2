@@ -1,10 +1,10 @@
 <?php
 require_once './autoload.php';
-// require_once './controllers/HomeController.php';
+require_once './controllers/HomeController.php';
 
 $home = new HomeController();
 
-$pages = ['home', 'about', 'gallery', 'contact', 'admin', 'adminLog'];
+$pages = ['home', 'about', 'gallery', 'contact', 'admin', 'adminLog', 'logout'];
 
 if (isset($_GET['page'])) {
     if (in_array($_GET['page'],$pages)) {

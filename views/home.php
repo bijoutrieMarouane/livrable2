@@ -1,7 +1,10 @@
 <div class="hero_area">
   <?php 
         $noNavbar2 = '';
+        require_once './controllers/ItemsControllers.php';
+        require_once './controllers/UsersControllers.php';
         include 'includes/header.php' ?>
+        
   <!-- slider section -->
   <?php include 'includes/slider.php' ?>
   <!-- end slider section -->

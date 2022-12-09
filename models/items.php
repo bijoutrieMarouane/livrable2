@@ -1,4 +1,5 @@
 <?php
+require_once './database/connect.php';
 class items
 {
     static public function select()

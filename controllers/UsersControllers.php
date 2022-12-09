@@ -7,6 +7,12 @@ class usersController{
         $users = users::selectUsers();
         return $users;
     }
+
+    public function checkUsers($user , $pass)
+    {
+        users::check($user , $pass);
+    }
+
     public function insertIntoUsers()
     {
         $username = $_POST['username'];

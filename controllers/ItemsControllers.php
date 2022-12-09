@@ -1,11 +1,13 @@
 <?php
-// items
 class itemsController{
 
     public function selectItems()
     {
         $items = items::select();
+        
         return $items;
+
+
     }
     public function insertIntoItems()
     {
@@ -29,3 +31,8 @@ class itemsController{
     }
 
 }
+
+
+
+
+

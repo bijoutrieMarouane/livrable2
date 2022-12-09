@@ -36,6 +36,8 @@ $font = 'layout/fonts/'; // Font Directory
   <!-- swiper style -->
   <link href="<?= $css .'swiper-bundle.min.css'?>" rel="stylesheet" />
 
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'>
 
   <?php
     if (!isset($noNavbar)) {

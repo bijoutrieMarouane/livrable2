@@ -1,7 +1,7 @@
 
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="home">
                 <img src="<?= $image ?>logo.png" alt="logo" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"

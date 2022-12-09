@@ -33,3 +33,5 @@ var swiper = new Swiper(".mySwiper", {
       x.className = "topnav";
     }
   }
+
+  // 404 page

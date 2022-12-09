@@ -1,18 +1,19 @@
 <div class="hero_area">
     <?php
     $noNavbar2 = '';
+    require_once './controllers/ItemsControllers.php';
+    require_once './controllers/UsersControllers.php';
     include 'includes/header.php';
-    $data = new itemsController();
-    $items = $data->selectItems();
-    print_r ($items);
     ?>
     <div class="grid container" style="display: flex; flex-wrap:wrap;">
         <div class="item">
             <?php
-                foreach ( $items as $item ){
+            $itemscon = new itemsController();
+            $itemsAff = $itemscon->selectItems();
+                foreach ( $itemsAff as $item ){
                     echo '<div class="box">';
                         echo '<div class="price">';
-                            echo $item['prix'];
+                            echo $item['prix'] .'DH';
                         echo '</div>';
                         echo '<div class="img-box">';
                             echo '<img src="' . $image . $item['image'] . '" alt="item">';
@@ -23,21 +24,6 @@
                     echo '</div>';
                 }
             ?>
-            <!-- <div class="box">
-                <div class="price">
-                    <h6>
-                        Best PRICE
-                    </h6>
-                </div>
-                <div class="img-box">
-                    <img src="<?= $image ?>i-1.png" alt="">
-                </div>
-                <div class="name">
-                    <h5>
-                        Bracelet
-                    </h5>
-                </div>
-            </div> -->
         </div>
     </div>
     <?php include 'includes/footer.php' ?>
