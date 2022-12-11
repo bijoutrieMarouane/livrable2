@@ -2,14 +2,15 @@
 $noNavbar = '';
 $noNavbar2 = '';
 $noFooter = '';
+include 'includes/header.php';
 require_once './controllers/ItemsControllers.php';
 require_once './controllers/UsersControllers.php';
-include 'includes/header.php';
-if (isset($_SESSION['Username'])) {
-	header('Location: admin'); // Redirect To Dashboard Page
-}
-$check = new usersController;
-$check->checkUsers('username','pass');
+
+// if (isset($_REQUEST['submit'])) {
+// 	$check = new usersController;
+// 	$check->checkUsers('username', 'pass');
+// }
+
 ?>
 
 <div class="containerAA">
@@ -18,16 +19,16 @@ $check->checkUsers('username','pass');
 			<form class="login" action="admin" method="POST">
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
-					<input type="text" class="login__input" placeholder="Username" name="username" required = "required">
+					<input type="text" class="login__input" placeholder="Username" name="username" required="required">
 				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
-					<input type="password" class="login__input" placeholder="Password" name="pass" required = "required">
+					<input type="password" class="login__input" placeholder="Password" name="pass" required="required">
 				</div>
-				<button class="button login__submit">
+				<button class="button login__submit" name="submit">
 					<span class="button__text">Log In Now</span>
 					<i class="button__icon fas fa-chevron-right"></i>
-				</button>				
+				</button>
 			</form>
 			<div class="social-login">
 				<h3>log in via</h3>
@@ -40,11 +41,13 @@ $check->checkUsers('username','pass');
 		</div>
 		<div class="screen__background">
 			<span class="screen__background__shape screen__background__shape4"></span>
-			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape3"></span>
 			<span class="screen__background__shape screen__background__shape2"></span>
 			<span class="screen__background__shape screen__background__shape1"></span>
-		</div>		
+		</div>
 	</div>
 </div>
 
-<?php include 'includes/footer.php';?>
+<?php
+include 'includes/footer.php';
+?>

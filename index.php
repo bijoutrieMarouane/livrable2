@@ -4,7 +4,7 @@ require_once './controllers/HomeController.php';
 
 $home = new HomeController();
 
-$pages = ['home', 'about', 'gallery', 'contact', 'admin', 'adminLog', 'logout'];
+$pages = ['home', 'about', 'gallery', 'contact', 'admin', 'adminLog', 'logout', 'Add', 'Edit', 'Delete'];
 
 if (isset($_GET['page'])) {
     if (in_array($_GET['page'],$pages)) {
@@ -16,5 +16,4 @@ if (isset($_GET['page'])) {
 }else{
     $home -> index('home');
 } 
-
 ?>

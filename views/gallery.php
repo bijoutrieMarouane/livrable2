@@ -1,9 +1,9 @@
 <div class="hero_area">
     <?php
     $noNavbar2 = '';
+    include 'includes/header.php';
     require_once './controllers/ItemsControllers.php';
     require_once './controllers/UsersControllers.php';
-    include 'includes/header.php';
     ?>
     <div class="grid container" style="display: flex; flex-wrap:wrap;">
         <div class="item">

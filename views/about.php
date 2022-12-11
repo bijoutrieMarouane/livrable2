@@ -1,9 +1,9 @@
 <div class="hero_area">
     <?php
     $noNavbar2 = '';
+    include 'includes/header.php' ?>
     require_once './controllers/ItemsControllers.php';
     require_once './controllers/UsersControllers.php';
-    include 'includes/header.php' ?>
     <section class="about_section layout_padding2-top layout_padding-bottom">
         <div class="design-box">
             <img src="<?= $image ?>design-2.png" alt="" />
