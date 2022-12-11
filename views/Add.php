@@ -17,8 +17,11 @@ require_once './controllers/UsersControllers.php';
   </div>
   <div class="labelInput">
     <label class="labelItem" for="image">Picture Of Item</label>
-    <input class="inputItem" type="file" name="image">
+    <input class="inputItem inputFile" type="file" name="image">
   </div>
+  <button type="submit" class="submitItems">
+    <i class="fa fa-plus"></i> New Item
+  </button>
 </form>
 
 <?php include 'includes/footer.php' ?>

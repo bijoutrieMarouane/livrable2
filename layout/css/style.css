@@ -1609,10 +1609,12 @@ label {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
+  margin-top: 30px;
+  gap: 10px;
 }
 
 .labelItem {
-  width: 20% !important;
+  width: 137px !important;
 }
 
 .inputItem {
@@ -1621,4 +1623,13 @@ label {
 
 .labelInput {
   width: 50%;
+}
+
+.inputFile{
+  border: 1px solid #333333;
+}
+
+.submitItems{
+  width: 136px;
+  margin: auto;
 }
