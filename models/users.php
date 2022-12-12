@@ -13,7 +13,6 @@ class users
     static public function check($user, $pass)
     {
         // if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            echo 'hj';
             $username = $_POST[$user];
             $password = $_POST[$pass];
             $hashedPass = sha1($password);

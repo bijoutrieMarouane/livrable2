@@ -8,6 +8,13 @@ class items
         $stmt->execute();
         return $stmt->fetchAll();
     }
+    static public function selectByID()
+    {
+        $itemid =(trim($_SERVER["REQUEST_URI"],'/mrashop/Edit?itemid=')); 
+        $stmt = DB::connect()->prepare('SELECT * FROM items WHERE id_i = ?');
+        $stmt->execute(array($itemid));
+        return $stmt->fetch();
+    }
 
     static public function insertInto($name, $img, $prix)
     {
@@ -15,12 +22,12 @@ class items
                                                 items (
                                                     name,
                                                     image, 
-                                                    prix,
+                                                    prix
                                                 ) 
                                             VALUES (
                                                 :zname,
                                                 :zimage,
-                                                :zprix,
+                                                :zprix
                                             )
                                         ');
         $stmt->execute(
@@ -32,7 +39,7 @@ class items
         );
     }
 
-    static public function update($name,$img,$prix,$id_i)
+    static public function update($name, $img, $prix, $id_i)
     {
         $stmt = DB::connect()->prepare("UPDATE 
         items 
@@ -43,7 +50,7 @@ class items
     WHERE 
         id_i = ?");
 
-        $stmt->execute(array($name, $img, $prix,$id_i));
+        $stmt->execute(array($name, $img, $prix, $id_i));
     }
 
     static public function delete($id_i)

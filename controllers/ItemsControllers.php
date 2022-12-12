@@ -9,18 +9,25 @@ class itemsController{
 
 
     }
+    public function selectItemsById()
+    {
+        $item = items::selectByID();
+        return $item;
+    }
     public function insertIntoItems()
     {
-        $name = $_POST['nameItem'];
-        $img = $_POST['image'];
-        $prix = $_POST['prix'];
-        items::insertInto($name, $img, $prix);
+        if (isset($_POST['ADD'])) {
+            $name = $_POST['name'];
+            $prix = $_POST['price'];
+            $img = $_POST['image'];
+            items::insertInto($name, $img, $prix);
+        }
     }
     public function updateItems()
     {
-        $name = $_POST['nameItem'];
+        $name = $_POST['name'];
         $img = $_POST['image'];
-        $prix = $_POST['prix'];
+        $prix = $_POST['price'];
         $id_i = $_POST['id_i'];
         items::update($name, $img, $prix, $id_i);
     }

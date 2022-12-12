@@ -1603,33 +1603,24 @@ label {
 }
 
 /* Add page */
-/* Add page */
-.addItems {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  margin-top: 30px;
+form.add_item {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 50% !important;
+  margin: 0% 25% !important;
   gap: 10px;
+  padding-top: 100px;
 }
 
-.labelItem {
-  width: 137px !important;
+.item {
+  display: flex;
 }
 
-.inputItem {
-  width: 79%;
-}
+.label_item {
+  width: 245px;
+  margin-right: 2%;
 
-.labelInput {
-  width: 50%;
 }
-
-.inputFile{
-  border: 1px solid #333333;
-}
-
-.submitItems{
-  width: 136px;
+.input_submit{
   margin: auto;
 }

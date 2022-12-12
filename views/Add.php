@@ -4,24 +4,29 @@ $noFooter = '';
 include 'includes/header.php';
 require_once './controllers/ItemsControllers.php';
 require_once './controllers/UsersControllers.php';
+$data = new itemsController();
+$data->insertIntoItems();
 ?>
 
-<form class="addItems" action="" method="post">
-  <div class="labelInput">
-    <label class="labelItem" for="name">Name Of Item</label>
-    <input class="inputItem" type="text" name="name">
+
+<form class="add_item" action="" method="POST">
+  <div class="item">
+    <label class="input-group-text label_item" for="name">Name Of Item</label>
+    <input type="text" class="form-control" name="name" placeholder="Name Of Item" required="required">
   </div>
-  <div class="labelInput">
-    <label class="labelItem" for="price">Price Of Item</label>
-    <input class="inputItem" type="number" name="price">
+  <div class="item">
+    <label class="input-group-text label_item" for="price">Price Of Item</label>
+    <input type="number" class="form-control" name="price" placeholder="Price Of Item" required="required">
   </div>
-  <div class="labelInput">
-    <label class="labelItem" for="image">Picture Of Item</label>
-    <input class="inputItem inputFile" type="file" name="image">
+  <div class="item">
+    <label class="input-group-text label_item" for="image">Picture Of Item</label>
+    <input class="form-control input_item" type="file" name="image" accept="image/png, image/jpeg, image/jpg"
+      required="required">
   </div>
-  <button type="submit" class="submitItems">
-    <i class="fa fa-plus"></i> New Item
-  </button>
+  <div class="submit_add">
+    <input name="ADD" class="input-group-text input_submit" type="submit" value="+ Ajouter le produit">
+  </div>
 </form>
+
 
 <?php include 'includes/footer.php' ?>

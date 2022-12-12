@@ -24,10 +24,10 @@ $items = $itemscon->selectItems();
                 echo "<tr>";
                     echo "<td>" . $item['id_i'] . "</td>";
                     echo "<td>" . $item['name'] . "</td>";
-                    echo "<td>" . $item['prix'] . "</td>";
+                    echo "<td>" . $item['prix'] . " DH</td>";
                     echo '<td> <img style="width: 38px;" src="' . $image . $item['image'] . '" alt="item"> </td>';
                     echo "<td>
-                        <a href='Edit?itemid=" . $item['id_i'] . "' class='btn btn-success'><i class='fa fa-edit'></i> Edit</a>
+                        <a href='Edit?itemid=".$item['id_i']."' class='btn btn-success'><i class='fa fa-edit'></i> Edit</a>
                         <a href='Delete?itemid=" . $item['id_i'] . "' class='btn btn-danger confirm'><i class='fa fa-close'></i> Delete </a>";
                     echo "</td>";
                 echo "</tr>";
