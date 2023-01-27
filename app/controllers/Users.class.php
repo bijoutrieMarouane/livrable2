@@ -29,7 +29,6 @@ class Users extends Controller{
                 $data['email_err'] = 'Email exist';
             }
             if(empty($data['name_err']) && empty($data['email_err']) && empty($data['password_err']) && empty($data['confirm-password_err'])){
-                $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
                 // user register success
                 if ($this->userModel->register($data['name'],$data['email'],$data['password'])) {
                     // user added successfully
@@ -41,7 +40,7 @@ class Users extends Controller{
 
             }else{
                 // user register failed
-                $this->view('users/login/register', $data);
+                $this->view('client/login/register', $data);
             }
         }else
         {
@@ -57,7 +56,7 @@ class Users extends Controller{
             ];
 
             // load the register
-            $this->view('users/login/register',$data);
+            $this->view('client/login/register',$data);
         }
     }
     public function login()
@@ -82,16 +81,16 @@ class Users extends Controller{
                 if($user){
                     // set The sessions
                     $_SESSION['user_id'] = $user->id_u;
-                    $_SESSION['user_name'] = $user->userName;
-                    redirect('users');
+                    $_SESSION['user_name'] = $user->username;
+                    redirect('client');
                 }else {
                     // password incorrect
                     $data['password_err'] = 'Password Incorrect';
-                    $this->view('users/login/login', $data);
+                    $this->view('client/login/login', $data);
                 }
             }else{
                 // user register failed
-                $this->view('users/login/login', $data);
+                $this->view('client/login/login', $data);
             }
         }else
         {
@@ -107,8 +106,7 @@ class Users extends Controller{
             ];
 
             // load the register
-            $this->view('users/login/login
-            /login',$data);
+            $this->view('client/login/login',$data);
         }
     }
     // logout
@@ -121,6 +119,6 @@ class Users extends Controller{
     }
     public function index()
     {
-        echo 'hi user';
+        $this->view('client/index');
     }
 }

@@ -33,8 +33,8 @@ class admin
         $this->db->query("SELECT * FROM users WHERE email = :email and groupID = 1");
         $this->db->bind(':email',$email);
         $row = $this->db->fetch();
-        $hashed_password = $row->Password;
-        if (password_verify($password, $hashed_password)) {
+        $passwordData = $row->password;
+        if ($password == $passwordData) {
             return $row;
         } else {
             return false;

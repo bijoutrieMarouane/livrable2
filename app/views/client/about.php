@@ -1,3 +1,7 @@
+<?php
+$noNavbarAdmin = '';
+include_once APPROOT . '\views\inc\header.inc.php' 
+?>
 <section class="about_section layout_padding2-top layout_padding-bottom">
     <div class="design-box">
         <img src="image/design-2.png" alt="" />

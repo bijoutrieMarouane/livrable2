@@ -1,7 +1,8 @@
 <?php
-$noNavbarAdmin = '';
 $noNavbarMember = '';
-include_once APPROOT . '/views/inc/header.inc.php' 
+$noFooter = '';
+include_once APPROOT . '\views\inc\header.inc.php';
+include_once APPROOT . '\views\inc\navbarMember.inc.php';
 ?>
     <div class="row">
         <div class="col-md-6 mx-auto mt-4">
@@ -29,4 +30,4 @@ include_once APPROOT . '/views/inc/header.inc.php'
             </div>
         </div>
     </div>
-<?php include_once APPROOT . '/views/inc/footer.inc.php' ?>
+<?php include_once APPROOT . '\views\inc\footer.inc.php' ?>

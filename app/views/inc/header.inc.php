@@ -15,17 +15,17 @@
     <title>M.R.A Shop</title>
 
     <!-- slider stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="<?=URLROOT?>css/owl.carousel.min.css" />
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="<?=URLROOT?>css/bootstrap.css" />
 
     <!-- fonts style -->
-    <link href="css/css.css" rel="stylesheet" />
+    <link href="<?=URLROOT?>css/css.css" rel="stylesheet" />
     <!-- Custom styles -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="<?=URLROOT?>css/style.css" rel="stylesheet" />
     <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="<?=URLROOT?>css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>

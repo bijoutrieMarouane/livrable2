@@ -1,3 +1,7 @@
+<?php
+$noNavbarAdmin = '';
+include_once APPROOT . '\views\inc\header.inc.php' 
+?>
 <section class="contact">
     <div class="fomulaire">
         <h1>Contact Us</h1>

@@ -29,7 +29,6 @@ class admins extends Controller{
                 $data['email_err'] = 'Email exist';
             }
             if(empty($data['name_err']) && empty($data['email_err']) && empty($data['password_err']) && empty($data['confirm-password_err'])){
-                $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
                 // user register success
                 if ($this->adminModel->register($data['name'],$data['email'],$data['password'])) {
                     // user added successfully
@@ -76,7 +75,6 @@ class admins extends Controller{
             }
             if(empty($data['email'])) $data['email_err'] = 'Please enter email';
             if(empty($data['password'])) $data['password_err'] = 'Please enter password';
-            
             if(empty($data['email_err']) && empty($data['password_err'])){
                 $user = $this->adminModel->login($data['email'],$data['password']);
                 if($user){

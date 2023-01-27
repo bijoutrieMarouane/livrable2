@@ -1,3 +1,7 @@
+<?php
+$noNavbarAdmin = '';
+include_once APPROOT . '\views\inc\header.inc.php' 
+?>
 <div class="grid container">
     <div class="box">
         <a href="#">
