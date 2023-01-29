@@ -117,3 +117,22 @@
     max-width: 1170px;
   }
 }
+@media(max-width: 973px){
+  .PNN{
+    margin-right: 25%;
+  }
+  .tel{
+    margin-left: 12%;
+  }
+  .form{
+    width: 74%;
+  }
+  .btn_envoyer{
+    margin-left: 35%;
+  }
+}
+@media(max-width: 800px){
+  .btn_envoyer{
+    margin-left: 35%;
+  }
+}
