@@ -917,3 +917,90 @@ a:focus {
   color: #9c9b9b;
 }
 /*# sourceMappingURL=style.css.map */
+/* contact style */
+
+.contact {
+  margin: 2% 18%;
+  margin-top: 1.58%;
+  width: 64%;
+}
+
+.contact .fomulaire {
+  background-image: url(../image/contact\ nous.jpg);
+}
+
+.contact .fomulaire h1 {
+  padding-top: 6%;
+  margin-bottom: 6%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 450%;
+  line-height: 6.03%;
+  text-align: center;
+  color: #FF3C3C;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+}
+
+.contact .fomulaire h2 {
+  padding-top: 1.31%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 155%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+.form{
+  line-height: 50px;
+  width: 32%;
+  margin-left: 12%;
+  border-radius: 17px;      
+  margin-bottom: -0.97%;
+  margin-top: 10%; 
+}
+.PNN{
+  margin-right: 12%;
+}
+.tel {
+  margin-left: 0px;
+}
+.message ,
+.email {
+  width: 76%;
+}
+.message{
+  resize: none;
+  margin-bottom: 7%;
+}
+.btn_envoyer{
+  background: linear-gradient(180deg, #F5E47B 1.03%, #FB930A 97.76%);
+width: 157px;
+border-radius: 5px;
+margin-left: 43%;
+margin-bottom: 2%;
+}
+.envoyer{
+  font-family: 'Khmer';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 157%;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 2%;
+}
+.img_envoyer{
+width: 44PX;
+MARGIN-TOP: 3%;
+MARGIN-LEFT: 7%;
+}
+/* end conatct style */
+
