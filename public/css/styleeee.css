@@ -1,0 +1,339 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.col-md-6 .img-box{
+    position: relative;
+    left: 30px;
+  }
+
+
+  /* .item_container .img-box{
+    width: 90px;
+  } */
+.container .row .form-input .msg{
+    position: relative;
+    left: 500px;
+    bottom: 112px;
+    height: 30px;
+}
+.container .row .form-input{
+    position: relative;
+    left: 100px;
+}
+.container .row .form-input .form{
+    position: relative;
+    left: 250px;
+    border-radius: 12px;
+    
+}
+.galery-first-pic .img-box{
+    position: relative;
+    left: 302px;
+    width: 100%;
+    bottom: 55px;
+}
+  
+/* .container .galery-first-pic .link button{
+    background-color: rgb(209, 24, 24);
+    border-radius: 12px;
+} */
+.second_title h2::before{
+    
+        content: "";
+        position: absolute;
+        width: 9px;
+        height: 26px;
+        top: 188.9%;
+        right: 860px;
+        background: -webkit-gradient(linear, left top, right top, from(#fb930a), to(#f5e47b));
+        background: linear-gradient(to right, #fb930a, #f5e47b);
+
+}
+.second_title{
+    position: relative;
+    bottom: 136px;
+}
+
+
+/* second price form */
+
+
+.price_section .price_tab2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.price_section .price_tab2 .box {
+    min-width: 300px;
+    max-width: 360px;
+    height: 550px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 35px 10px;
+    padding: 45px 0 25px 0;
+    text-align: center;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.05);
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  
+  .price_section .price_tab2 .box .img-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .price_section .price_tab2 .box .img-box img {
+    width: 150px;
+  }
+  
+  .price_section .price_tab2 .box h6 {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .price_section .price_tab2 .box .detail-box h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .price_section .price_tab2 .box .detail-box h5 span {
+    color: #fbb534;
+  }
+  
+  .price_section .price_tab2 .box .detail-box a {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #000000;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 15px;
+  }
+  
+  .price_section .price_tab2 .box:hover a {
+    border-color: #fbb534;
+    color: #fbb534;
+  }
+
+  .price_tab2{
+    position: relative;
+    bottom: 148px;
+  }
+
+
+
+  /* third price form */
+
+  .third_title{
+    position: relative;
+    bottom: 290px;
+}
+
+.price_section .price_tab3{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        position: relative;
+        bottom: 290px;
+}
+
+.price_section .price_tab3 .box {
+    min-width: 300px;
+    max-width: 360px;
+    height: 550px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 35px 10px;
+    padding: 45px 0 25px 0;
+    text-align: center;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.05);
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  
+  .price_section .price_tab3 .box .img-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .price_section .price_tab3 .box .img-box img {
+    width: 150px;
+  }
+  
+  .price_section .price_tab3 .box h6 {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .price_section .price_tab3 .box .detail-box h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .price_section .price_tab3 .box .detail-box h5 span {
+    color: #fbb534;
+  }
+  
+  .price_section .price_tab3 .box .detail-box a {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #000000;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 15px;
+  }
+  
+  .price_section .price_tab3 .box:hover a {
+    border-color: #fbb534;
+    color: #fbb534;
+  }
+
+  .price_tab3{
+    position: relative;
+    bottom: 148px;
+  }
+
+
+  .price_btn{
+    position: relative;
+    bottom: 260px;
+  }
+
+
+
+
+  /* name and email phon number form*/
+
+  .form_format{
+    display: flex;
+    justify-content: space-around;
+    /* border-radius: 71px; */
+    /* background-color: #fbb534;
+    padding: 2%; */
+    border:sol 55%;
+  }
+.msg{
+  position: relative;
+  top: 37px;
+  right: 6%;
+
+}
+.first_items {
+  position: relative;
+    top: -11px;
+    left: 60PX;
+    
+}
+#fname ,#lname,#phone,#email{
+  width: 198%;
+  border: solid 4px;
+  border-color: #fb930a;
+  
+}
+.message-box{
+  height: 79.3%;
+  border: solid 4px;
+  border-color: #fb930a;
+  /* border-top-color: #fb930a; */
+}
+.buttonn #buttonS{
+  position: relative;
+  left: 39%;
+  bottom: 29px;
+  width: 20%;
+  justify-content: center;
+}
+#h2_form{
+  position: relative;
+  left: 24%;
+  bottom: 50%;
+}
+@media screen and (max-width: 700px) {
+  .form_format{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+  }
+  .message-box{
+    display: flex;
+    position: relative;
+    left: 60%;
+    margin-bottom: 50%;
+  }
+
+  #h2_form{
+    text-align: center;
+    position: static;
+  }
+  .contact_pic{
+    position: relative;
+    right: 13%; 
+    
+  }
+  .detail-box {
+    text-align: center;
+  }
+.galery-first-pic{
+  position: relative;
+  right: 34%;
+  top: 50px;
+}
+
+}
+
